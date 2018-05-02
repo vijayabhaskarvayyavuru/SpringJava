@@ -10,6 +10,8 @@ pipeline {
         stage('Example') {
             steps {
                 echo 'Hello World'
+                sh 'java -version'
+                sh 'mvn -B clean verify'
             }
             
             input {
