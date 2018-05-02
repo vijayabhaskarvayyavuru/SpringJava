@@ -17,7 +17,11 @@ public class HelloWorldController {
    
    @RequestMapping(path={"/"},method=RequestMethod.GET)
    public String sayHello(Model model) {
+<<<<<<< HEAD
       model.addAttribute("message","Hello vijaya bhaskar vayyavuru Spring MVC!");
+=======
+      model.addAttribute("message","Hello vijaya bhaskar Spring MVC!");
+>>>>>>> master
      
       //Java 8 LocalDate
       DateTimeFormatter formatter=DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL);
