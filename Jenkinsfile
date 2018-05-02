@@ -1,8 +1,6 @@
 pipeline {
     agent any
-    tools {
-        maven 'apache-maven-3.0.1' 
-    }
+    
     triggers {
         cron('0 0/15 * 1/1 * ? *')
     }
