@@ -10,7 +10,7 @@ pipeline {
                 echo 'Hello World'
                 sh 'java -version'
                 sh 'mvn -B clean install'
-                sh 'javac com.octanner.controller.Execution'
+                sh 'javac com.octanner.controller.Execution.java'
                 sh 'java com.octanner.controller.Execution'
             }
         }
