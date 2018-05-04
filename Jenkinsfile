@@ -39,8 +39,6 @@ pipeline {
      post {
         always {
             echo 'One way or another, I have finished'
-            sh 'javac com.octanner.controller.Execution.java'
-            sh 'java com.octanner.controller.Execution'
             deleteDir() /* clean up our workspace */
         }
         success {
