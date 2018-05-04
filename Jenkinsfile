@@ -38,8 +38,6 @@ pipeline {
      post {
         always {
             echo 'One way or another, I have finished'
-            javac com.ocatnner.controller.Excution.java 
-            java Excution
             deleteDir() /* clean up our workspace */
         }
         success {
