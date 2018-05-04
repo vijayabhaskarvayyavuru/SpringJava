@@ -9,7 +9,8 @@ pipeline {
             steps {
                 echo 'Hello World'
                 sh 'java -version'
-                sh 'mvn -B clean install'  
+                sh 'mvn -B clean install'
+                sh 'ls' 
             }
         }
         stage('No-op') {
