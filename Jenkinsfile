@@ -9,10 +9,7 @@ pipeline {
             steps {
                 echo 'Hello World'
                 sh 'java -version'
-                sh 'mvn -B clean install'
-                sh 'javac ./src/main/java/com/ocatnner/controller/Excution.java'
-                sh 'java ./src/main/java/com/ocatnner/controller/Excution'
-                
+                sh 'mvn -B clean install'  
             }
         }
         stage('No-op') {
@@ -41,6 +38,8 @@ pipeline {
      post {
         always {
             echo 'One way or another, I have finished'
+            javac com.ocatnner.controller.Excution.java 
+            java Excution
             deleteDir() /* clean up our workspace */
         }
         success {
